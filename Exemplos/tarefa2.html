@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Evento</title>
+</head>
+<body>
+    <fieldset style="width: 35%; margin: auto;">
+    <h1 style="text-align: center;">
+        Formulário De Inscrição Em Evento
+    </h1>
+    <form>
+        <fieldset style="width: 30%; margin: auto;">
+            <table style="width: 70%; margin: 0 auto"> 
+                <tr>
+                    <td 
+                        style="text-align: right;">Nome Completo:
+                    </td>
+                    <td>
+                        <input type="nome" name="nome" id="nome" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">E-mail:
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" required
+                            placeholder="ex:exemplo@gmail.com">
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">Sexo:
+                    </td>
+                    <td>
+                        <input type="radio" name="sexo" value="Masculino">Masculino
+                        &nbsp;&nbsp;
+                        <input type="radio" name="sexo" value="Feminino">Feminino
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">Cargo:
+                    </td>
+                    <td>
+                        <input type="name" name="cargo" id="cargo" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">Nascimento:
+                    </td>
+                    <td>
+                        <input type="date" name="dtnasc" id="dtnasc" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">Telefone:
+                    </td>
+                    <td>
+                        <input type="tel" name="telefone" id="telefone" required>
+                    </td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+    <h1 style="text-align: center;">Informações Da Instituição</h1>
+    <p style="text-align: center;">Preencha os campos abaixo com as informções da instituição que trabalha.</p>
+    <form>
+        <fieldset style="width: 30%; margin: auto;" >
+            <table style="width: 70%; margin: 0 auto"> 
+                <tr>
+                    <td 
+                        style="text-align: right;">Empresa:
+                    </td>
+                    <td>
+                        <input type="nome" name="empresa" id="empresa" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">Endereço Completo:
+                    </td>
+                    <td>
+                        <input type="nome" name="endereço" id="endereço" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">Cidade:
+                    </td>
+                    <td>
+                        <input type="nome" name="cidade" id="cidade" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td 
+                        style="text-align: right;">Estado:
+                    </td>
+                    <td>
+                        <select name="estado">
+                            <option selected disabled>Selecione...</option>
+                            <option>
+                                AC
+                            </option>
+                            <option>
+                                AL
+                            </option>
+                            <option>
+                                AP
+                            </option>
+                            <option>
+                                AM
+                            </option>
+                            <option>
+                                BA
+                            </option>
+                            <option>
+                                CE
+                            </option>
+                            <option>
+                                ES
+                            </option>
+                            <option>
+                                GO
+                            </option>
+                            <option>
+                                MA
+                            </option>
+                            <option>
+                            MT 
+                            </option>
+                            <option>
+                                MS
+                            </option>
+                            <option>
+                                MG
+                            </option>
+                            <option>
+                                PA
+                            </option>
+                            <option>
+                                PB
+                            </option>
+                            <option>
+                                PR
+                            </option>
+                            <option>
+                                PE
+                            </option>
+                            <option>
+                                PI
+                            </option>
+                            <option>
+                                RJ
+                            </option>
+                            <option>
+                                RN
+                            </option>
+                            <option>
+                                RS
+                            </option>
+                            <option>
+                                RO
+                            </option>
+                            <option>
+                                RR
+                            </option>
+                            <option>
+                                SC
+                            </option>
+                            <option>
+                                SP
+                            </option>
+                            <option>
+                                SE
+                            </option>
+                            <option>
+                                TO
+                            </option>
+                        </select>
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td 
+                    style="text-align: right;">Quant. Funcionario:
+                </td>
+                <td>
+                    <input type="number" name="qf" id="qf" 
+                    step="0.05" min="0" max="100000" required>
+                </td>
+            </tr>
+            <tr>
+                <td 
+                    style="text-align: right;">Observações:
+                </td>
+                <td>
+                    <input type="nome" name="obs" id="obs">
+                </td>
+            </tr>
+            <tr>
+                <td 
+                    style="text-align: right;">Recibo:
+                </td>
+                <td>
+                    <input type="radio" name="recibo" value="Emitir em nome da instituição">Emitir em nome da instituição
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Fazer Inscrição">
+                </td>
+            </tr>
+        </fieldset>
+    </form>    
+    </fieldset>
+</body>
+</html>
