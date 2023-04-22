@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    background-color:#4CAF50;
+    font-size: 350%;
+    color: white;   
+}
+
+/* animação 1*/
+
+.div {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #B4EEB4;
+    margin: 10px;
+}
+  
+  /* final animação 1 */
+
+  /* animação 2 */
+
+  .div1 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #FFB5C5;
+    margin: 10px;
+  }
+ 
+  /* final animação 2 */
+
+  /* animação 3 */
+
+  .div2 {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background-color: #AEEEEE;
+    margin: 10px;
+  }
+
+    /* final animação 3 */

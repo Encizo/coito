@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    background-color:#4CAF50;
+    font-size: 430%; 
+    color: white;   
+}
+
+h2{
+    text-align: center;
+    background-color:#4CAF50;
+    font-size: 350%; 
+    color: white;   
+}
+
+.p1{
+    text-align: center;
+    font-size: 180%;
+    font-style: italic;
+}
+
+tbody{
+    text-align: center;
+}
+
+.div2{
+    margin-left: auto;
+    margin-right: auto; 
+    width: 32%; 
+}
