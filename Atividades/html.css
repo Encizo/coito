@@ -34,3 +34,12 @@ tbody{
     text-align: center;
     width: 50%;
 }
+
+.im:hover{
+    transform: scale(1.1);
+      
+}
+
+.im:active{
+    transform: scale(0.9);
+}

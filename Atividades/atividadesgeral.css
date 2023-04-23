@@ -13,8 +13,17 @@ h1{
     height: 100px;
     background-color: #B4EEB4;
     margin: 10px;
+
 }
-  
+
+.div:hover{
+  transform: scale(1.1);
+}
+ 
+.div:active{
+  transform: scale(0.9);
+}
+
   /* final animação 1 */
 
   /* animação 2 */
@@ -25,6 +34,14 @@ h1{
     height: 100px;
     background-color: #FFB5C5;
     margin: 10px;
+  }
+
+  .div1:hover{
+    transform: scale(1.1);
+  }
+   
+  .div1:active{
+    transform: scale(0.9);
   }
  
   /* final animação 2 */
@@ -39,4 +56,13 @@ h1{
     margin: 10px;
   }
 
+  .div2:hover{
+    transform: scale(1.1);
+  }
+   
+  .div2:active{
+    transform: scale(0.9);
+  }
+
     /* final animação 3 */
+
