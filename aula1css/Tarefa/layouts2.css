@@ -1,0 +1,64 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+}
+
+.intro{
+    grid-area: intro;
+}
+
+.box1{
+    grid-area: box1;
+}
+
+.box2{
+    grid-area: box2;
+}
+
+.box3{
+    grid-area: box3;
+}
+
+.body{
+    grid-area: body;
+}
+
+.foot{
+    grid-area: foot;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-areas: 
+    'logo logo logo nav nav nav'
+    'header header header header header header'
+    'intro intro intro intro intro intro'
+    'box1 box1 box2 box2 box3 box3'
+    'box1 box1 box2 box2 box3 box3'
+    'foot foot foot foot foot foot';
+    grid-gap: 2em;
+    background-color: #ffffff;
+    padding: 0.8em;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.nav,.logo,.foot,.header,.intro,.box1,.box2,.box3,.body{
+    background-color: rgb(180, 182, 182);
+    text-align: center;
+    padding: 0.5em;
+
+}

@@ -1,0 +1,52 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.logo{
+    grid-area: logo;
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+}
+
+.side{
+    grid-area: side;
+}
+
+.body{
+    grid-area: body;
+}
+
+.foot{
+    grid-area: foot;
+}
+
+.container-grid{
+    display: grid;
+    grid-template-areas: 
+    'logo logo logo logo logo logo'
+    'nav nav nav nav nav nav'
+    'header header header header header header'
+    'side side body body body body'
+    'side side body body body body'
+    'foot foot foot foot foot foot';
+    grid-gap: 2em;
+    background-color: #ffffff;
+    padding: 0.8em;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.nav,.logo,.foot,.header,.side,.body{
+    background-color: rgb(180, 182, 182);
+    text-align: center;
+    padding: 0.5em;
+
+}
