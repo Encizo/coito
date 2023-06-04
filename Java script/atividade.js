@@ -45,3 +45,24 @@ var n1 = parseInt(prompt("Informe o numero de polegadas : "));
 
 document.write("<h1> polegadas convetida em milímetros são: "+n1*25.4+"milímetros</h1>");
 */
+
+const dataAtual = new Date();
+
+const anoAtual = dataAtual.getFullYear();
+
+var nascimento = document.getElementById("nascimento")
+var validador = 1900;
+
+nascimento.onkeyup = function(){
+    if(parseInt(nascimento.value) < anoAtual){
+        document.write("<p>Idade"+ nascimento.value - anoAtual +"</p>");
+    }else if(parseInt(nascimento.value) > anoAtual){
+        verif.innerHTML = 'Informe um ano valido'
+    }else if(parseInt(nascimento.value) < validador){
+        verif.innerHTML='Informe um ano valido'
+
+    }else{
+        verif.innerHTML='Informe um ano valido'
+    }
+};
+

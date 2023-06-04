@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo</title>
+</head>
+<body>
+    
+    <h1 id="titulo" >Manipulando elementos html (DOM) com Javascript </h1>
+    <p id="result"></p>
+    <fieldset>    
+        <label for="num1">Valor 1:</label>
+        <input type="number" id="num1" step="0.1" min="0"><br>
+        <label for="num2">Valor 2:</label>
+        <input type="number" id="num2" step="0.1" min="0"><br>
+        <input type="button" id="bto" value="OK">
+    </fieldset>
+    <br><br>
+    <fieldset>
+        <legend>Multiplos de 4</legend>
+        <label for="vlr1">Inicio</label>
+        <input id="vlr1" type="number" step="1" min="0"><br>
+        <label for="vlr2">Fim:</label>
+        <input id="vlr2" type="number" step="1" min="0">
+        <span id="verif"></span><br>
+        <button id="btGerar">Gerar</button>
+    </fieldset>
+    <script>
+        //var titulo=document.getElementById("titulo");
+        //alert(titulo.innerHTML);
+        //titulo.style.backgroundColor = "green";
+        //titulo.style = "border: 1px dotted yellow; font-size: 30pt;";
+       // var num1=document.querySelector('#num1');
+        var botao = document.getElementById('bto');
+        //var num1 = document.querySelector("num1");
+        //var num2 = document.querySelector("num2");
+
+        //num1.value = 4.2;
+        //function numvar(){
+        //    result.innerHTML = "Informe um valor maior que 0!"
+        //}
+        botao.onclick = function(){
+            var num1 = document.querySelector("num1");
+            var num2 = document.querySelector("num2");
+
+            if(parseFloat(num1) > parseFloat(num2)){
+                result.innerHTML="O maior valor é o primeiro";
+            }else if(parseFloat(num2) > parseFloat(num1)){
+                result.innerHTML='O maior valor é o segundo';
+            }else{
+                result.innerHTML = 'Os valores são iguais';
+            }
+        };
+        
+        vlr2.onkeyup = function(){
+            if (parseInt(vlr2.value) < parseInt(vlr1.value)){
+                verif.innerHTML = 'O valor deve ser maior que o primeiro';
+                varif.style.color='red';
+            }else{
+                verif.innerHTML='OK';
+                verif.style.color='green';
+            }
+
+        };
+
+    </script>
+
+</body>
+</html>
