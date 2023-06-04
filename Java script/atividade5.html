@@ -1,0 +1,39 @@
+<html lang="pt-br">
+    <head>
+        <title>tarefa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="number" id="val" placeholder="Informe a primeira nota"><br>
+        <input type="number" id="valor2" placeholder="Informe a segunda nota"><br>
+        <input type="number" id="valor3" placeholder="Informe a terceira nota"><br>
+        <input type="button" id="botao" value="Somar">
+        <p id="resultado">resultado:</p>
+
+        <script>
+            val.onchange = voltarValor;
+            valor2.onchange = voltarValor;
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            botao.onclick = function(){
+                voltarValor();
+                let valor = parseInt(document.getElementById("val").value);
+                let valor2 = parseInt(document.querySelector("#valor2").value);
+                let valor3 = parseInt(document.querySelector("#valor3").value);
+                let soma = ((valor + valor2 + valor3)/3)
+                if (soma>=60){
+                    resultado.innerHTML += "Você está APROVADO";
+                }else if(soma<60 && soma>20){
+                    resultado.innerHTML += "Você está de na PROVA FINAL";
+                }else{
+                    resultado.innerHTML += "Você está de REPROVADO";
+                }
+            }
+
+        </script>
+    </body>
+</html>

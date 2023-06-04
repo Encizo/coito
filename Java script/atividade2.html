@@ -1,0 +1,44 @@
+<html lang="pt-br">
+    <head>
+        <title>atividade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="number" id="val" placeholder="Informe o ano atual"><br>
+        <input type="number" id="valor2" placeholder="Informe seu ano de nascimento"><br>
+        <input type="button" id="botao" value="Somar">
+        <p id="resultado">resultado:</p>
+
+        <script>
+            val.onchange = voltarValor;
+            valor2.onchange = voltarValor;
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            botao.onclick = function(){
+                
+                let valor = parseInt(document.getElementById("val").value);
+                let valor2 = parseInt(document.querySelector("#valor2").value);
+
+                if (valor < valor2){
+                    resultado.innerHTML += "valor invalido";
+                    }else if(valor2 == 0 ){
+                        resultado.innerHTML += "valor invalido";
+                    }else{
+                        resultado.innerHTML += valor - valor2;
+                    }
+            };
+
+                
+          
+
+        </script>
+    </body>
+</html>

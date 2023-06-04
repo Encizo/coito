@@ -1,0 +1,40 @@
+<html lang="pt-br">
+    <head>
+        <title>atividade</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="number" id="val" placeholder="Informe um valor de a"><br>
+        <input type="number" id="valor2" placeholder="Informe um valor de b"><br>
+        <input type="number" id="valor3" placeholder="Informe um valor de c"><br>
+        <input type="button" id="botao" value="Verificar">
+        <p id="resultado">resultado:</p>
+
+        <script>
+            val.onchange = voltarValor;
+            valor2.onchange = voltarValor;
+            valor3.onchange = voltarValor;
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            botao.onclick = function(){
+                voltarValor();
+                let valor = parseInt(document.getElementById("val").value);
+                let valor2 = parseInt(document.querySelector("#valor2").value);
+                let valor3 = parseInt(document.querySelector("#valor3").value);
+                let verificador = valor + valor2
+                if (verificador<valor3){
+                    resultado.innerHTML += "o valor de a + b: "+verificador+" é menor de que c: "+valor3;
+                }else if(verificador>valor3){
+                    resultado.innerHTML += "o valor de a + b: "+verificador+" é maior de que c: "+valor3;
+                }else{
+                    resultado.innerHTML += "o valor de a + b: "+verificador+" é igual c: "+valor3;
+                }
+            }
+
+        </script>
+    </body>
+</html>

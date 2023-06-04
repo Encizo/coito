@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Soma de números menores</title>
+</head>
+<body>
+
+  <h1>Calculadora de soma de números menores</h1>
+
+  <label for="numero">Digite um número maior que 0:</label>
+  <input type="number" id="numero">
+  <button onclick="calcularSomaMenores()">Calcular</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function calcularSomaMenores() {
+      let numeroLido = document.getElementById("numero").value;
+      let soma = 0;
+
+      for (let i = 1; i < numeroLido; i++) {
+        soma += i;
+      }
+
+      document.getElementById("resultado").textContent = "A soma de todos os números menores que " + numeroLido + " é: " + soma;
+    }
+  </script>
+
+</body>
+</html>

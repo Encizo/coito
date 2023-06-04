@@ -1,0 +1,40 @@
+<html lang="pt-br">
+    <head>
+        <title>Exemplo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="number" id="val" placeholder="Informe um valor"><br>
+        <input type="number" id="valor2" placeholder="Informe outro valor"><br>
+        <input type="button" id="botao" value="Somar">
+        <p id="resultado">resultado:</p>
+
+        <script>
+            val.onchange = voltarValor;
+            valor2.onchange = voltarValor;
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            botao.onclick = function(){
+                voltarValor();
+                let valor = parseInt(document.getElementById("val").value);
+                let valor2 = parseInt(document.querySelector("#valor2").value);
+                soma = 0
+                if (valor <= valor2) {
+                for (let i = valor; i <= valor2; i++) {
+                if (i > 0) {
+                    soma += i;
+                            }
+                    }
+                    resultado.innerHTML += "A soma dos numeros de X a Y é: "+soma;
+                }else{
+                    resultado.innerHTML += "Valor de X ou Y é invalido"
+                }
+            }
+
+        </script>
+    </body>
+</html>

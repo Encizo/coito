@@ -17,7 +17,7 @@ var n1 = parseInt(prompt("Informe uma quantidade de segundos: "));
 var resultado = Math.floor(n1/60);
 
 alert("Seus segundos convertidos em minutos são: "+resultado+" minutos e "+n1%60+" segundos");
-
+*/
 
 var n1 = parseInt(prompt("Informe uma quantidade de minutos: "));
 
@@ -28,6 +28,7 @@ var min = Math.floor(minutos%60);
 
 document.write("<h1>Seus minutos convertidos em dias são: "+dias+" dias "+horas+ " horas e "+min+" minutos</h1>");
 
+/*
 var n1 = parseInt(prompt("Informe uma quantidade de horas: "));
 var n2 = parseInt(prompt("Informe uma quantidade de minutos: "));
 

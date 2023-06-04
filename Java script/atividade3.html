@@ -1,0 +1,34 @@
+<html lang="pt-br">
+    <head>
+        <title>Exemplo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="number" id="val" placeholder="Informe um valor"><br>
+        <input type="button" id="botao" value="Verificar">
+        <p id="resultado">resultado:</p>
+
+        <script>
+            val.onchange = voltarValor;
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            botao.onclick = function(){
+                voltarValor();
+                let valor = parseInt(document.getElementById("val").value);
+                if (valor >=100 && valor <1000){
+                    resultado.innerHTML +="O " +valor+ " Esta entre 100 e 1000";
+                }else{
+                    resultado.innerHTML +="O " +valor+ " Não está entre 100 e 1000";
+                }
+
+            };
+
+            
+
+        </script>
+    </body>
+</html>

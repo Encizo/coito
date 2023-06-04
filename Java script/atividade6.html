@@ -1,0 +1,30 @@
+<html lang="pt-br">
+    <head>
+        <title>tarefa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="number" id="val" placeholder="Informe um valor"><br>
+        <input type="button" id="botao" value="Verificar">
+        <p id="resultado">resultado:</p>
+
+        <script>
+            val.onchange = voltarValor;
+
+            function voltarValor(){
+                resultado.innerHTML = "resultado:";
+            }
+
+            botao.onclick = function(){
+                voltarValor();
+                let valor = parseInt(document.getElementById("val").value);
+                let soma = 0;
+                for (let i = 1; i < valor; i++) {
+                soma += i;
+                }
+                resultado.innerHTML += "A soma de todos os numeros menores é de: "+valor+' è: '+soma;
+            }
+        </script>
+    </body>
+</html>
