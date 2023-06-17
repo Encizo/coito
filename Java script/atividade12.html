@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+    <h3>Calculador de peso em Diferentes planetas: </h3>
+    <fieldset>
+        <p>Selecione o Planeta:</p>
+        <form>
+                <input type="checkbox" name="Mercúrio" data-id="p1">
+                <label for="p1">Mercúrio</label>
+                <input type="checkbox" name="Vênus" data-id="p2" >
+                <label for="p2">Vênus</label>
+                <input type="checkbox" name="Marte" data-id="p3" >
+                <label for="p3">Marte</label>
+        </form>
+        <form>
+                <input type="checkbox" name="Júpiter"data-id="p4" >
+                <label for="p4">Júpiter</label>
+                <input type="checkbox" name="Saturno" data-id="p5" >
+                <label for="p5">Saturno</label>
+                <input type="checkbox" name="Urano" data-id="p6" >
+                <label for="p6">Urano</label>
+        </form>
+        <p>Informe seu peso:</p>
+        <form>
+                <input type="text" id="val">
+                <input type="button" id="botao" value="Calcular Peso">
+        </form>
+        <p id="resultado">Resultado: </p>
+    </fieldset>
+
+    <script>
+
+        function voltarValor(){
+            resultado.innerHTML = "Resultado: ";
+        }
+
+        botao.onclick = function(){
+            voltarValor()
+            let valor = parseInt(document.getElementById("val").value);
+            let checkboxes = document.querySelectorAll('input[type=checkbox]:checked');
+
+                for (let checkbox of checkboxes) {
+                    
+                    if(checkbox.dataset.id == "p1"){
+                        resultado.innerHTML += " O seu peso em Mercúrio seria: " + valor * 0.37 + "Kg.";
+                    }else if(checkbox.dataset.id == "p2"){
+                        resultado.innerHTML += " O seu peso em Vênus seria: " + valor * 0.88 + "Kg.";
+                    }else if(checkbox.dataset.id == "p3"){
+                        resultado.innerHTML += " O seu peso em Marte seria: " + valor * 0.38 + "Kg.";
+                    }else if(checkbox.dataset.id == "p4"){
+                        resultado.innerHTML += " O seu peso em Júpiter seria: " + valor * 2.64 + "Kg.";
+                    }else if(checkbox.dataset.id == "p5"){
+                        resultado.innerHTML += " O seu peso em Saturno seria: " + valor * 1.15 + "Kg.";
+                    }else{
+                        resultado.innerHTML += " O seu peso em Urano seria: " + valor * 1.17 + "Kg.";
+                    }
+                }
+            }
+        
+
+    </script>
+</body>
+</html>

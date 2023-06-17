@@ -10,6 +10,13 @@ h1{
     font-size: 430%; 
     color: white;   
 }
+
+.p1{
+  text-align: center;
+  font-size: 180%;
+  font-style: italic;
+}
+
 /* Botao IFRO */
 .button {
     float: left;
