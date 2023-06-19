@@ -1,8 +1,14 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 h1{
-    text-align: center;
-    background-color:#4CAF50;
-    font-size: 350%;
-    color: white;   
+  text-align: center;
+  background-color:#4CAF50;
+  font-size: 430%; 
+  color: white;   
 }
 
 /* animação 1*/

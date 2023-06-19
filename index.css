@@ -11,6 +11,13 @@ h1{
     color: white;   
 }
 
+h2{
+  text-align: center;
+  background-color:#4CAF50;
+  font-size: 430%; 
+  color: white;   
+}
+
 .p1{
   text-align: center;
   font-size: 180%;
