@@ -28,6 +28,13 @@ tbody{
     width: 32%; 
 }
 
+.div{
+    float: left;
+    font-size: 180%;
+    text-align: center;
+    width: 50%;
+}
+
 .im:hover{
     transform: scale(1.1);
       
